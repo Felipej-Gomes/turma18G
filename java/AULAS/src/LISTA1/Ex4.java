@@ -1,13 +1,11 @@
 package LISTA1;
 import java.util.Scanner;
 
-//4. Escreva um sistema que leia três números inteiros e positivos (A, B, C) e
-//calcule a seguinte expressão:
-	
+
 public class Ex4 {
 	public static void main(String[] args) {
 		
-		int a,b,c,d;
+		int a,b,c,d,s,r;
 		
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Digite o valor de A: ");
@@ -16,11 +14,8 @@ public class Ex4 {
 		b = entrada.nextInt();
 		System.out.println("Digite o valor de C: ");
 		c = entrada.nextInt();
+		s = (int) ((b+c)+Math.sqrt(2));
+		r = (int) ((a+b)+Math.sqrt(2));
+		d = (int) (r+s)/2;
+		System.out.printf("Seu resultado Ã©: %d" ,d);
 		
-		
-		
-		
-		
-	}
-
-}
